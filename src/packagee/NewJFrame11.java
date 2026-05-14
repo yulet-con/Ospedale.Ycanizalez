@@ -10,11 +10,13 @@ import javax.swing.UIManager;
 
 /**
  *
- * @author Lab6k
+ * @author jjlora
+ * @author edangulo
  */
 public class NewJFrame11 extends javax.swing.JFrame {
 
-    private int x,y ;
+    private int x, y;
+    
     public NewJFrame11() {
         initComponents();
         this.setBackground(new Color(0, 0, 0, 0));
@@ -138,12 +140,12 @@ public class NewJFrame11 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void panelRound2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelRound2MousePressed
-         x = evt.getX();
+        x = evt.getX();
         y = evt.getY();
     }//GEN-LAST:event_panelRound2MousePressed
 
     private void panelRound2MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelRound2MouseDragged
-       this.setLocation(this.getLocation().x + evt.getX() - x, this.getLocation().y + evt.getY() - y);
+        this.setLocation(this.getLocation().x + evt.getX() - x, this.getLocation().y + evt.getY() - y);
     }//GEN-LAST:event_panelRound2MouseDragged
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

@@ -10,11 +10,13 @@ import javax.swing.UIManager;
 
 /**
  *
- * @author Lab6k
+ * @author jjlora
+ * @author edangulo
  */
 public class NewJFrame111 extends javax.swing.JFrame {
 
-    private int x,y ;
+    private int x, y;
+    
     public NewJFrame111() {
         initComponents();
         this.setBackground(new Color(0, 0, 0, 0));
@@ -183,12 +185,12 @@ public class NewJFrame111 extends javax.swing.JFrame {
         );
 
         jLabel2.setFont(new java.awt.Font("Yu Gothic UI", 0, 18)); // NOI18N
-        jLabel2.setText("First name");
+        jLabel2.setText("Firstname");
 
         jTextField1.setFont(new java.awt.Font("Yu Gothic UI", 0, 18)); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Yu Gothic UI", 0, 18)); // NOI18N
-        jLabel3.setText("Surname");
+        jLabel3.setText("Lastname");
 
         jTextField2.setFont(new java.awt.Font("Yu Gothic UI", 0, 18)); // NOI18N
 
@@ -206,7 +208,7 @@ public class NewJFrame111 extends javax.swing.JFrame {
         jTextField6.setFont(new java.awt.Font("Yu Gothic UI", 0, 18)); // NOI18N
 
         jLabel8.setFont(new java.awt.Font("Yu Gothic UI", 0, 18)); // NOI18N
-        jLabel8.setText("Office assigned");
+        jLabel8.setText("Assigned office");
 
         jTextField7.setFont(new java.awt.Font("Yu Gothic UI", 0, 18)); // NOI18N
 
@@ -315,7 +317,7 @@ public class NewJFrame111 extends javax.swing.JFrame {
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jButton9)
                             .addComponent(jLabel11))))
-                .addContainerGap(117, Short.MAX_VALUE))
+                .addContainerGap(132, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -901,12 +903,12 @@ public class NewJFrame111 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void panelRound2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelRound2MousePressed
-         x = evt.getX();
+        x = evt.getX();
         y = evt.getY();
     }//GEN-LAST:event_panelRound2MousePressed
 
     private void panelRound2MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelRound2MouseDragged
-       this.setLocation(this.getLocation().x + evt.getX() - x, this.getLocation().y + evt.getY() - y);
+        this.setLocation(this.getLocation().x + evt.getX() - x, this.getLocation().y + evt.getY() - y);
     }//GEN-LAST:event_panelRound2MouseDragged
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
