@@ -23,8 +23,17 @@ public class Appointment {
     public void setReason(String reason) {
         this.reason = reason;
     }
+
+    public void setDatetime(LocalDateTime datetime) {
+        this.datetime = datetime;
+    }
+
     private boolean type;
     private ArrayList<Prescription> prescriptions;
+
+    public ArrayList<Prescription> getPrescriptions() {
+        return prescriptions;
+    }
     private AppointmentStatus status;
     private String diagnosis;
     private String observations;
@@ -89,6 +98,26 @@ public class Appointment {
 
     public Patient getPatient() {
         return patient;
+    }
+
+    public String getReason() {
+        return reason;
+    }
+
+    public String getDiagnosis() {
+        return diagnosis;
+    }
+
+    public String getObservations() {
+        return observations;
+    }
+
+    public String getRecommendedTreatment() {
+        return recommendedTreatment;
+    }
+
+    public String getFollowUp() {
+        return followUp;
     }
 
     public boolean addPrescription(Prescription prescrip) {
