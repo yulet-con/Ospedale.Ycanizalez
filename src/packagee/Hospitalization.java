@@ -29,6 +29,42 @@ public class Hospitalization {
         this.status = status;
     }
 
+    public void setDoctor(Doctor doctor) {
+        this.doctor = doctor;
+    }
+
+    public Doctor getDoctor() {
+        return doctor;
+    }
+
+    public Patient getPatient() {
+        return patient;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public String getReason() {
+        return reason;
+    }
+
+    public RoomType getRoomType() {
+        return roomType;
+    }
+
+    public String getObservations() {
+        return observations;
+    }
+
+    public void setObservations(String observations) {
+        this.observations = observations;
+    }
+
+    public HospitalizationStatus getStatus() {
+        return status;
+    }
+
     public Hospitalization(String id, Patient patient, Doctor doctor, LocalDate date, String reason, RoomType roomType, String observations) {
         this.id = id;
         this.patient = patient;
